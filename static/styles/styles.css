@@ -38,9 +38,11 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
     width: 25%;
+    display: inline-block;
 }
 
 .featured-card:hover {
