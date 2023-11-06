@@ -14,8 +14,55 @@ html {
     text-decoration: none;
     padding: 10px 25px;
     border-radius: 12px;
+    transition: background-color 0.3s;
 }
 
 .about-me a:hover {
     background-color: #6af;
+}
+
+.featured {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    padding: 20px;
+}
+
+.featured h2 {
+    /* text-align: center; */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.featured-card {
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 25%;
+}
+
+.featured-card:hover {
+    background-color: #f0f0f0;
+}
+
+.featured-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.featured-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.featured-card p {
+    color: #666;
+}
+
+.no-dec {
+    text-decoration: none;
 }
