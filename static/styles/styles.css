@@ -3,5 +3,19 @@ html {
 }
 
 .about-me {
-    background-color: #fafafa;
+    background-color: #f7f7f7;
+    padding: 1px 10px 30px 10px;
+}
+
+.about-me a {
+    background-color: #8bf;
+    border: none;
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+.about-me a:hover {
+    background-color: #6af;
 }
