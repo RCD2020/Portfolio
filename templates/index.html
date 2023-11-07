@@ -35,29 +35,29 @@
 
         <div class="featured">
             <h2>Featured Projects</h2>
-            <div class="cards-block">
-                <a href="/" class="no-dec">
-                    <div class="featured-card">
-                        <img src="{{ url_for('static', filename='images/projects/image-filter-webapp.png') }}" alt="image filter webapp thumbnail">
-                        <h3>Image Filter Webapp</h3>
-                        <p>Flask webpage that allows users to write their own filters using a custom micro programming language to alter user submitted images</p>
-                    </div>
+            <div class="card-container">
+                <a href="/" class="card no-dec">
+                    <img src="{{ url_for('static', filename='images/projects/image-filter-webapp.png') }}" alt="image filter webapp thumbnail">
+                    <h3>Image Filter Webapp</h3>
+                    <p>Flask webpage that allows users to write their own filters using a custom micro programming language to alter user submitted images</p>
                 </a>
 
-                <a href="/" class="no-dec">
-                    <div class="featured-card">
-                        <img src="{{ url_for('static', filename='images/projects/spotty.jpeg') }}" alt="spotify song recommender thumbnail">
-                        <h3>Spotify Song Recommender</h3>
-                        <p>A Heroku hosted webpage that uses Spotify Search API to select a song, and then uses NearestNeighbor models and a song dataset to recommend 5 songs to you.</p>
-                    </div>
+                <a href="/" class="card no-dec">
+                    <img src="{{ url_for('static', filename='images/projects/spotty.jpeg') }}" alt="spotify song recommender thumbnail">
+                    <h3>Spotify Song Recommender</h3>
+                    <p>A Heroku hosted webpage that uses Spotify Search API to select a song, and then uses NearestNeighbor models and a song dataset to recommend 5 songs to you.</p>
                 </a>
 
-                <a href="/" class="no-dec">
-                    <div class="featured-card">
-                        <img src="{{ url_for('static', filename='images/projects/simplysavings.png')}}" alt="simply savings thumbnail">
-                        <h3>Simply Savings</h3>
-                        <p>iOS appstore published app that allows users to keep track of their finances, and enable them to save more than ever</p>
-                    </div>
+                <a href="/" class="card no-dec">
+                    <img src="{{ url_for('static', filename='images/projects/simplysavings.png')}}" alt="simply savings thumbnail">
+                    <h3>Simply Savings</h3>
+                    <p>iOS appstore published app that allows users to keep track of their finances, and enable them to save more than ever</p>
+                </a>
+
+                <a href="/" class="card no-dec">
+                    <img src="{{ url_for('static', filename='images/projects/gravity.png') }}" alt="gravity sim thumbnail">
+                    <h3>Gravity Sim</h3>
+                    <p>Static HTML webpage that utilizing a canvas element simulates gravity between celestial bodies</p>
                 </a>
             </div>
         </div>
