@@ -84,13 +84,26 @@ a {
     left: 0;
     background-color: #6af;
     overflow-x: hidden;
-    padding-top: 20px;
     color: #fff;
     padding-left: 10px;
 }
 
+.sidenav a {
+    color: #fff;
+    font-weight: bold;
+}
+
 .main {
     margin-left: 188px;
+}
+
+.sidecont img {
+    border-radius: 100%;
+    width: 80%;
+    margin-left: 12px;
+    display: block;
+    padding-left: 0;
+    border: 3px solid #fff;
 }
 
 @media only screen and (max-width: 625px) {
@@ -102,7 +115,6 @@ a {
         left: auto;
         overflow-x: auto;
         text-align: center;
-        padding-top: 0px;
         padding-left: 0px;
     }
 
