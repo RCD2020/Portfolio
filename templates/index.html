@@ -1,65 +1,53 @@
-<!DOCTYPE html>
+{% extends 'template.html' %}
 
-<html lang="en">
-    <head>
-        <title>Robert Davis's Portfolio</title>
+{% block title %}Robert Davis's Portfolio{% endblock %}
 
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Robert Davis's Programming Portfolio">
-        <meta name="author" content="Robert Davis">
+{% block body %}
+<div class="about-me">
+    <h2>Robert Davis</h2>
+    <p>
+        Hello, I'm Robert Davis, a versatile programmer experienced in Python alongside several other languages.
+        My journey into tech was unconventional—I previously served as a shift leader at Cracker Barrel,
+        where I cultivated leadership and problem-solving skills.
+        Alongside my role, I delved into the world of programming and completed CS50x, a renowned computer science course.
+        This experience broadened my perspective and equipped me with a strong foundation in various programming languages,
+        with a particular focus on Python and C. I enjoy the challenge of unraveling complex problems and crafting elegant solutions.
+        My background in leadership has honed my communication and teamwork skills,
+        which I find invaluable in collaborative coding environments.
+        I'm passionate about technology, constantly exploring new languages and frameworks to stay ahead in this ever-evolving field.
+        I believe in the power of innovation and am excited about the endless possibilities technology offers.
+    </p>
+    <br>
+    <a href="https://RCD2020.github.io">View Portfolio</a>
+    <a href="/resume">View Resume</a>
+</div>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
-    </head>
-    <body>
-        <div class="about-me">
-            <h2>Robert Davis</h2>
-            <p>
-                Hello, I'm Robert Davis, a versatile programmer experienced in Python alongside several other languages.
-                My journey into tech was unconventional—I previously served as a shift leader at Cracker Barrel,
-                where I cultivated leadership and problem-solving skills.
-                Alongside my role, I delved into the world of programming and completed CS50x, a renowned computer science course.
-                This experience broadened my perspective and equipped me with a strong foundation in various programming languages,
-                with a particular focus on Python and C. I enjoy the challenge of unraveling complex problems and crafting elegant solutions.
-                My background in leadership has honed my communication and teamwork skills,
-                which I find invaluable in collaborative coding environments.
-                I'm passionate about technology, constantly exploring new languages and frameworks to stay ahead in this ever-evolving field.
-                I believe in the power of innovation and am excited about the endless possibilities technology offers.
-            </p>
-            <br>
-            <a href="https://RCD2020.github.io">View Portfolio</a>
-            <a href="/resume">View Resume</a>
-        </div>
+<div class="featured">
+    <h2>Featured Projects</h2>
+    <div class="card-container">
+        <a href="/" class="card">
+            <img src="{{ url_for('static', filename='images/projects/image-filter-webapp.png') }}" alt="image filter webapp thumbnail">
+            <h3>Image Filter Webapp</h3>
+            <p>Flask webpage that allows users to write their own filters using a custom micro programming language to alter user submitted images</p>
+        </a>
 
-        <div class="featured">
-            <h2>Featured Projects</h2>
-            <div class="card-container">
-                <a href="/" class="card no-dec">
-                    <img src="{{ url_for('static', filename='images/projects/image-filter-webapp.png') }}" alt="image filter webapp thumbnail">
-                    <h3>Image Filter Webapp</h3>
-                    <p>Flask webpage that allows users to write their own filters using a custom micro programming language to alter user submitted images</p>
-                </a>
+        <a href="/" class="card">
+            <img src="{{ url_for('static', filename='images/projects/spotty.jpeg') }}" alt="spotify song recommender thumbnail">
+            <h3>Spotify Song Recommender</h3>
+            <p>A Heroku hosted webpage built in a team of 4, we utilized a NearestNeighbor model trained using a Spotify song dataset, and by leveraging Spotify's Search API, we recommend 5 songs that are similar to the user submitted one.</p>
+        </a>
 
-                <a href="/" class="card no-dec">
-                    <img src="{{ url_for('static', filename='images/projects/spotty.jpeg') }}" alt="spotify song recommender thumbnail">
-                    <h3>Spotify Song Recommender</h3>
-                    <p>A Heroku hosted webpage that uses Spotify Search API to select a song, and then uses NearestNeighbor models and a song dataset to recommend 5 songs to you.</p>
-                </a>
+        <a href="/" class="card">
+            <img src="{{ url_for('static', filename='images/projects/simplysavings.png')}}" alt="simply savings thumbnail">
+            <h3>Simply Savings</h3>
+            <p>iOS appstore published app that allows users to keep track of their finances, and enable them to save more than ever</p>
+        </a>
 
-                <a href="/" class="card no-dec">
-                    <img src="{{ url_for('static', filename='images/projects/simplysavings.png')}}" alt="simply savings thumbnail">
-                    <h3>Simply Savings</h3>
-                    <p>iOS appstore published app that allows users to keep track of their finances, and enable them to save more than ever</p>
-                </a>
-
-                <a href="/" class="card no-dec">
-                    <img src="{{ url_for('static', filename='images/projects/gravity.png') }}" alt="gravity sim thumbnail">
-                    <h3>Gravity Sim</h3>
-                    <p>Static HTML webpage that utilizing a canvas element simulates gravity between celestial bodies</p>
-                </a>
-            </div>
-        </div>
-    </body>
-</html>
+        <a href="/" class="card">
+            <img src="{{ url_for('static', filename='images/projects/gravity.png') }}" alt="gravity sim thumbnail">
+            <h3>Gravity Sim</h3>
+            <p>Static HTML webpage that utilizing a canvas element simulates gravity between celestial bodies</p>
+        </a>
+    </div>
+</div>
+{% endblock %}

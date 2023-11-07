@@ -21,6 +21,14 @@ html {
     background-color: #6af;
 }
 
+.about-me h2 {
+    color: #333;
+}
+
+.about-me p {
+    color: #666;
+}
+
 .featured {
     padding: 20px;
 }
@@ -30,7 +38,7 @@ html {
     color: #333;
 }
 
-.no-dec {
+a {
     text-decoration: none;
 }
 
@@ -43,10 +51,10 @@ html {
 .card {
     background-color: #f7f7f7;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 1.5%;
     border-radius: 10px;
     transition: background-color 0.3s;
-    width: 40%;
+    width: 45%;
     margin-bottom: 2%;
 }
 
