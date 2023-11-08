@@ -97,7 +97,11 @@ a {
     margin-left: 188px;
 }
 
-.sidecont img {
+#sidecont {
+    font-size: x-large;
+}
+
+#sidecont img {
     border-radius: 100%;
     width: 80%;
     margin-left: 12px;
@@ -106,18 +110,23 @@ a {
     border: 3px solid #fff;
 }
 
-.sidecont a {
+#sidecont a {
     line-height: 1.5;
 }
 
-.sidecont a:hover {
+#sidecont a:hover {
     color: #ddd;
     transition: color 0.3s;
 }
 
-.sidecont svg {
-    max-height: 15px;
-    max-width: 15px;
+#sidecont svg {
+    max-height: 22px;
+    max-width: 22px;
+}
+
+.material-icons {
+    visibility: hidden;
+    position: absolute;
 }
 
 @media only screen and (max-width: 625px) {
@@ -141,11 +150,28 @@ a {
         padding: 0px;
     }
 
-    .sidecont {
+    #sidecont {
         display: none;
+        padding-bottom: 10px;
+    }
+
+    #sidecont img {
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main {
         margin: 8px;
+    }
+
+    .material-icons {
+        font-size: 48px;
+        left: 20px;
+        top: 20px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        visibility: visible;
+        cursor: pointer;
     }
 }
