@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ def landing():
 
 @app.route('/resume')
 def resume():
-    return send_from_directory('static', 'documents/resume.pdf')
+    return render_template('resume.html')
 
 
 if __name__ == '__main__':
