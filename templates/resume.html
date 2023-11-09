@@ -5,11 +5,24 @@
 
 
 {% block head %}
+<!-- resume.css -->
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/resume.css') }}">
+
+<!-- Google Download Icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 {% endblock %}
 
 
 {% block body %}
+<div id="download">
+    <a id="button" href="{{ url_for('static', filename='documents/resume.pdf') }}" download="resume.pdf">
+        <span class="material-symbols-outlined">
+            download
+        </span>
+        <b>Download Resume</b>
+    </a>
+</div>
+
 <div id="resume">
     <h1><span class="red">ROBERT</span> <span class="dark">DAVIS</span></h1>
 
