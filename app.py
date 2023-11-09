@@ -17,7 +17,7 @@ def resume():
 @app.route('/projects/<project>')
 def projectView(project):
     try:
-        return render_template(f'{project}.html')
+        return render_template(f'projects/{project}.html')
     except:
         abort(404)
 
